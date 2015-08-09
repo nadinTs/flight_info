@@ -4,15 +4,13 @@ body {
     font-family: Tahoma;
     font-size: 14px;
     letter-spacing: 0.07em;
-
-
 }
 
 
 .wrap {
     padding: 10px 0;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 900px;
 }
 
 .title {
@@ -34,41 +32,35 @@ body {
 
 .info_table {
     overflow: hidden;
-    /*max-width: 1200px;*/
-    /*min-width: 900px;*/
+    width: 900px;
     text-align: center;
-    margin: 0 auto;
     border-collapse: collapse;
     color: #727071;
+    z-index: 1;
+    display: table;
 }
 
 .table_head {
     background-color: #00acdb;
     color: #fff;
+    width: 900px;
+    z-index: 100;
+}
+tr,
+.scroll_header {
+   display: table-row;
 }
 
 .table_item {
     border: 1px solid #e1e1e1;
-    padding: 5px;
-    width: 12.5%;
+    /*padding: 5px;*/
 }
-
-/*.table_item_row:nth-child(2n) td{*/
-    /*background-color: #f8f8f8;*/
-/*}*/
-/*.table_item:hover,*/
-/*.table_item_row:nth-child(2n) td:hover{*/
-    /*background-color: #727071;*/
-/*}*/
-/*.column{*/
-    /*background-color: #727071;*/
-/*}*/
 
 body tbody tr:hover {
     background-color: #ffffd0;
 }
 td, th {
-    padding: 10px;
+    /*padding: 10px;*/
     position: relative;
     outline: 0;
 }
@@ -76,7 +68,8 @@ td, th {
 td:hover::after,
 thead th:not(:empty):hover::after,
 td:focus::after,
-thead th:not(:empty):focus::after {
+thead th:not(:empty):focus::after
+ {
     content: '';
     height: 10000px;
     left: 0;
@@ -89,6 +82,21 @@ thead th:not(:empty):focus::after {
 td:hover::after,
 th:hover::after {
     background-color: #ffffd0;
+}
+
+.scroll_header{
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.scroll_header:hover tr,
+.scroll_header:hover{
+    background-color: #00acdb;
+}
+.scroll_header th:hover::after {
+    opacity: 0;
 
 }
+
 
