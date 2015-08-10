@@ -1,16 +1,51 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Tahoma;
+    font-family: "Tahoma", sans-serif;
     font-size: 14px;
     letter-spacing: 0.07em;
 }
+table,
+tbody,
+thead{
+    width: 900px;
+}
+tr {
+    display: table-row;
+}
+td,th {
+    display: table-cell;
+}
 
+.table_item--width1 {
+    width: 60px;
+}
+.table_item--width2 {
+    width: 100px;
+}
+.table_item--width3 {
+    width: 130px;
+}
+.table_item--width4{
+    width: 125px;
+}
+.table_item--width5 {
+    width: 115px;
+}
+.table_item--width6 {
+    width: 125px;
+}
+.table_item--width7 {
+    width: 130px;
+}
+.table_item--width8 {
+    width: 115px;
+}
 
 .wrap {
     padding: 10px 0;
     margin: 0 auto;
-    max-width: 900px;
+    width: 900px;
 }
 
 .title {
@@ -21,8 +56,9 @@ body {
     text-transform: uppercase;
 }
 
-/*.info {*/
-/*}*/
+.info {
+    padding: 20px 0;
+}
 
 .info_form {
     color: #727071;
@@ -32,7 +68,6 @@ body {
 
 .info_table {
     overflow: hidden;
-    width: 900px;
     text-align: center;
     border-collapse: collapse;
     color: #727071;
@@ -40,30 +75,52 @@ body {
     display: table;
 }
 
-.table_head {
-    background-color: #00acdb;
-    color: #fff;
-    width: 900px;
-    z-index: 100;
-}
+
 tr,
 .scroll_header {
    display: table-row;
 }
+.table_item_row:nth-child(odd){
+    background-color: #ffffd0;
+}
 
-.table_item {
+.table_item,
+.table_item_header,
+.table_item_row:hover:nth-child(odd)>td{
     border: 1px solid #e1e1e1;
-    /*padding: 5px;*/
 }
 
 body tbody tr:hover {
-    background-color: #ffffd0;
+    background-color: #e8fdf7;
+
 }
 td, th {
-    /*padding: 10px;*/
     position: relative;
     outline: 0;
 }
+
+.table_item:hover,
+.table_item_row:hover:nth-child(odd) td{
+    background-color: #e8fdf7;
+
+}
+
+.table_item_row td:hover,
+.table_item_row:nth-child(odd) td:hover{
+    background-color: lightblue;
+}
+
+td:hover::after,
+th:hover::after {
+    background-color: #ffffd0;
+}
+
+.table_item,
+.table_item_header,
+.table_item_row:hover:nth-child(odd)>td{
+    border: 1px solid #e1e1e1;
+}
+
 
 td:hover::after,
 thead th:not(:empty):hover::after,
@@ -79,10 +136,7 @@ thead th:not(:empty):focus::after
     z-index: -1;
 }
 
-td:hover::after,
-th:hover::after {
-    background-color: #ffffd0;
-}
+
 
 .scroll_header{
     position: fixed;
@@ -90,8 +144,15 @@ th:hover::after {
     visibility: visible;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+.table_head {
+    background-color: #00acdb;
+    color: #fff;
+    z-index: 100;
+}
+
 .scroll_header:hover tr,
-.scroll_header:hover{
+.scroll_header:hover {
     background-color: #00acdb;
 }
 .scroll_header th:hover::after {
@@ -99,4 +160,145 @@ th:hover::after {
 
 }
 
+.img_departure {
+    background: url("img/icon-plane.png")no-repeat left bottom;
+    width: 24px;
+    height: 19px;
+    margin: 10px auto;
+}
 
+.img_arrival{
+    background: url("img/icon-plane.png")no-repeat right bottom;
+    width: 24px;
+    height: 19px;
+    margin:auto;
+}
+
+
+#arrival:not(:checked)  ~ .info > table > tbody > .arrival td{
+    display: none;
+}
+#departure:not(:checked)  ~ .info > table > tbody > .departure td{
+    display: none;
+}
+
+
+.icon_lufthansa {
+    background: url("img/lufthansa.jpg") no-repeat 50% 50%;
+}
+.icon_orenburg {
+    background: url("img/orenburg_airlines.jpg") no-repeat 50% 50%;
+}
+.icon_yakutia {
+    background: url("img/yakutia.jpg") no-repeat 50% 50%;
+}
+.icon_turkish {
+    background: url("img/turkish_airlines.jpg") no-repeat 50% 50%;
+}
+
+.name_company {
+    display: none;
+}
+
+
+@media (min-width: 800px) and (max-width: 900px) {
+
+    .wrap{
+        width: 790px;
+    }
+
+    table,
+    thead,
+    tbody{
+        width: 790px;
+    }
+
+
+    .table_item--width8 {
+        display: none;
+    }
+
+}
+@media (min-width: 700px) and (max-width: 799px) {
+
+    .wrap {
+        width: 665px;
+    }
+
+    table,
+    thead,
+    tbody {
+        width: 665px;
+    }
+
+    .table_item--width4,
+    .table_item--width8 {
+        display: none;
+    }
+
+}
+@media (min-width: 600px) and (max-width: 699px) {
+
+    .wrap {
+        width: 540px;
+    }
+
+    table,
+    thead,
+    tbody {
+        width: 540px;
+    }
+
+    .table_item--width3,
+    .table_item--width4,
+    .table_item--width8 {
+        display: none;
+    }
+
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
+
+    .wrap {
+        width: 415px;
+    }
+
+    table,
+    thead,
+    tbody {
+        width: 415px;
+    }
+
+    .table_item--width3,
+    .table_item--width4,
+    .table_item--width5,
+    .table_item--width8 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 399px) {
+
+    .wrap {
+        width: 320px;
+        min-width: 320px;
+    }
+
+    table,
+    thead,
+    tbody {
+        width: 285px;
+        min-width: 285px;
+
+    }
+
+    .table_item--width3,
+    .table_item--width4,
+    .table_item--width5,
+    .table_item--width7,
+    .table_item--width8 {
+        display: none;
+    }
+
+}
