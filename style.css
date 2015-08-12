@@ -9,6 +9,7 @@ table,
 tbody,
 thead{
     width: 900px;
+    z-index: 10;
 }
 tr {
     display: table-row;
@@ -165,9 +166,11 @@ thead th:not(:empty):focus::after
     width: 24px;
     height: 19px;
     margin: 10px auto;
+    display: block;
 }
 
 .img_arrival{
+    display: block;
     background: url("img/icon-plane.png")no-repeat right bottom;
     width: 24px;
     height: 19px;
@@ -199,6 +202,25 @@ thead th:not(:empty):focus::after
 .name_company {
     display: none;
 }
+.lufthansa {
+    position: relative;
+}
+
+.info_lufthansa {
+    display: none;
+    position: absolute;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    font-size: 10px;
+    z-index: 120;
+}
+
+tbody .lufthansa:hover+.info_lufthansa {
+    display: block;
+    border: 1px solid red;
+}
 
 
 @media (min-width: 800px) and (max-width: 900px) {
@@ -217,6 +239,7 @@ thead th:not(:empty):focus::after
     .table_item--width8 {
         display: none;
     }
+
 
 }
 @media (min-width: 700px) and (max-width: 799px) {
@@ -275,7 +298,6 @@ thead th:not(:empty):focus::after
     .table_item--width8 {
         display: none;
     }
-
 }
 
 @media (max-width: 399px) {

@@ -7,236 +7,294 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div class="wrap">
-<div class="title">Онлайн табло</div>
-<!--<form action="" method="post" class="info_form">-->
-    <input type="checkbox" id="departure" class="info_form" checked>
-    <label for="departure">Вылет</label>
-    <input type="checkbox" id="arrival" checked>
-    <label for="arrival" class="info_form">Прибытие</label>
-<!--</form>-->
-    <div class="info">
-        <table class="info_table">
-            </caption>
-            <thead class="table_head">
-            <tr>
-                <th class="table_item_header table_item--width1">Тип<br> рейса</th>
-                <th class="table_item_header table_item--width2">Номер <br> рейса</th>
-                <th class="table_item_header table_item--width3">Авиакомпания</th>
-                <th class="table_item_header table_item--width4">Тип <br>воздушного<br> судна</th>
-                <th class="table_item_header table_item--width5">Аэропорт<br> назначения</th>
-                <th class="table_item_header table_item--width6">Плановое<br> время<br> вылета</th>
-                <th class="table_item_header table_item--width7">Статус<br> рейса</th>
-                <th class="table_item_header table_item--width8">Примечание</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="table_item_row departure">
-                <td class="table_item table_item--width1"><div class="img_departure"></div></td>
-                <td class="table_item table_item--width2">UT 9002</td>
-                <td class="table_item table_item--width3 icon_turkish"><span class="name_company">UTair Aviation</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Antalya</td>
-                <td class="table_item table_item--width6"> 08.08 в 18:00</td>
-                <td class="table_item table_item--width7">Landed 18:19. Baggage conveyor В01</td>
-                <td class="table_item table_item--width8"></td>
-            </tr>
-            <tr class="table_item_row arrival">
-                <td class="table_item table_item--width1"><div class="img_arrival"></div></td>
-                <td class="table_item table_item--width2">LH 1471</td>
-                <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
-                <td class="table_item table_item--width4">Аэробус А 320</td>
-                <td class="table_item table_item--width5">Frankfurt</td>
-                <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
-                <td class="table_item table_item--width7">Boarding finished at gate 29</td>
-                <td class="table_item table_item--width8"></td>
-            </tr>
-            <tr class="table_item_row arrival">
-                <td class="table_item table_item--width1"><div class="img_arrival"></div></td>
-                <td class="table_item table_item--width2">ЯК 474</td>
-                <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Якутск</td>
-                <td class="table_item table_item--width6">08.08 в 18:10</td>
-                <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
-                <td class="table_item table_item--width8">Gate 16</td>
-            </tr>
-            <tr class="table_item_row arrival">
-                <td class="table_item table_item--width1"><div class="img_arrival"></div></td>
-                <td class="table_item table_item--width2">LH 1471</td>
-                <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
-                <td class="table_item table_item--width4">Аэробус А 320</td>
-                <td class="table_item table_item--width5">Frankfurt</td>
-                <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
-                <td class="table_item table_item--width7">Boarding finished at gate 29</td>
-                <td class="table_item table_item--width8"></td>
-            </tr>
-            <tr class="table_item_row departure">
-                <td class="table_item table_item--width1"><div class="img_departure"></div></td>
-                <td class="table_item table_item--width2">ЯК 474</td>
-                <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Якутск</td>
-                <td class="table_item table_item--width6">08.08 в 18:10</td>
-                <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
-                <td class="table_item table_item--width8">Gate 16</td>
-            </tr>
-            <tr class="table_item_row departure">
-                <td class="table_item table_item--width1"><div class="img_departure"></div></td>
-                <td class="table_item table_item--width2">UT 9002</td>
-                <td class="table_item table_item--width3 icon_turkish"><span class="name_company">UTair Aviation</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Antalya</td>
-                <td class="table_item table_item--width6"> 08.08 в 18:00</td>
-                <td class="table_item table_item--width7">Landed 18:19. Baggage conveyor В01</td>
-                <td class="table_item table_item--width8"></td>
-            </tr>
-            <tr class="table_item_row departure">
-                <td class="table_item table_item--width1"><div class="img_departure"></div></td>
-                <td class="table_item table_item--width2">LH 1471</td>
-                <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
-                <td class="table_item table_item--width4">Аэробус А 320</td>
-                <td class="table_item table_item--width5">Frankfurt</td>
-                <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
-                <td class="table_item table_item--width7">Boarding finished at gate 29</td>
-                <td class="table_item table_item--width8"></td>
-            </tr>
-            <tr class="table_item_row departure">
-                <td class="table_item table_item--width1"><div class="img_departure"></div></td>
-                <td class="table_item table_item--width2">ЯК 474</td>
-                <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Якутск</td>
-                <td class="table_item table_item--width6">08.08 в 18:10</td>
-                <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
-                <td class="table_item table_item--width8">Gate 16</td>
-            </tr>
-            <tr class="table_item_row departure">
-                <td class="table_item table_item--width1"><div class="img_departure"></div></td>
-                <td class="table_item table_item--width2">ЯК 474</td>
-                <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Якутск</td>
-                <td class="table_item table_item--width6">08.08 в 18:10</td>
-                <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
-                <td class="table_item table_item--width8">Gate 16</td>
-            </tr>
-            <tr class="table_item_row departure">
-                <td class="table_item table_item--width1"><div class="img_departure"></div></td>
-                <td class="table_item table_item--width2">ЯК 474</td>
-                <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Якутск</td>
-                <td class="table_item table_item--width6">08.08 в 18:10</td>
-                <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
-                <td class="table_item table_item--width8">Gate 16</td>
-            </tr>
-            <tr class="table_item_row arrival">
-                <td class="table_item table_item--width1"><div class="img_arrival"></div></td>
-                <td class="table_item table_item--width2">UT 9002</td>
-                <td class="table_item table_item--width3 icon_turkish"><span class="name_company">UTair Aviation</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Antalya</td>
-                <td class="table_item table_item--width6"> 08.08 в 18:00</td>
-                <td class="table_item table_item--width7">Landed 18:19. Baggage conveyor В01</td>
-                <td class="table_item table_item--width8"></td>
-            </tr>
-            <tr class="table_item_row departure">
-                <td class="table_item table_item--width1"><div class="img_departure"></div></td>
-                <td class="table_item table_item--width2">LH 1471</td>
-                <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
-                <td class="table_item table_item--width4">Аэробус А 320</td>
-                <td class="table_item table_item--width5">Frankfurt</td>
-                <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
-                <td class="table_item table_item--width7">Boarding finished at gate 29</td>
-                <td class="table_item table_item--width8"></td>
-            </tr>
-            <tr class="table_item_row arrival">
-                <td class="table_item table_item--width1"><div class="img_arrival"></div></td>
-                <td class="table_item table_item--width2">ЯК 474</td>
-                <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Якутск</td>
-                <td class="table_item table_item--width6">08.08 в 18:10</td>
-                <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
-                <td class="table_item table_item--width8">Gate 16</td>
-            </tr>
-            <tr class="table_item_row arrival">
-                <td class="table_item table_item--width1"><div class="img_arrival"></div></td>
-                <td class="table_item table_item--width2">UT 9002</td>
-                <td class="table_item table_item--width3 icon_turkish"><span class="name_company">UTair Aviation</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Antalya</td>
-                <td class="table_item table_item--width6"> 08.08 в 18:00</td>
-                <td class="table_item table_item--width7">Landed 18:19. Baggage conveyor В01</td>
-                <td class="table_item table_item--width8"></td>
-            </tr>
-            <tr class="table_item_row arrival">
-                <td class="table_item table_item--width1"><div class="img_arrival"></div></td>
-                <td class="table_item table_item--width2">LH 1471</td>
-                <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
-                <td class="table_item table_item--width4">Аэробус А 320</td>
-                <td class="table_item table_item--width5">Frankfurt</td>
-                <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
-                <td class="table_item table_item--width7">Boarding finished at gate 29</td>
-                <td class="table_item table_item--width8"></td>
-            </tr>
-            <tr class="table_item_row arrival">
-                <td class="table_item table_item--width1"><div class="img_arrival"></div></td>
-                <td class="table_item table_item--width2">ЯК 474</td>
-                <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Якутск</td>
-                <td class="table_item table_item--width6">08.08 в 18:10</td>
-                <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
-                <td class="table_item table_item--width8">Gate 16</td>
-            </tr>
-            <tr class="table_item_row arrival">
-                <td class="table_item table_item--width1"><div class="img_arrival"></div></td>
-                <td class="table_item table_item--width2">UT 9002</td>
-                <td class="table_item table_item--width3 icon_turkish"><span class="name_company">UTair Aviation</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Antalya</td>
-                <td class="table_item table_item--width6"> 08.08 в 18:00</td>
-                <td class="table_item table_item--width7">Landed 18:19. Baggage conveyor В01</td>
-                <td class="table_item table_item--width8"></td>
-            </tr>
-            <tr class="table_item_row arrival">
-                <td class="table_item table_item--width1"><div class="img_arrival"></div></td>
-                <td class="table_item table_item--width2">LH 1471</td>
-                <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
-                <td class="table_item table_item--width4">Аэробус А 320</td>
-                <td class="table_item table_item--width5">Frankfurt</td>
-                <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
-                <td class="table_item table_item--width7">Boarding finished at gate 29</td>
-                <td class="table_item table_item--width8"></td>
-            </tr>
-            <tr class="table_item_row arrival">
-                <td class="table_item table_item--width1"><div class="img_arrival"></div></td>
-                <td class="table_item table_item--width2">ЯК 474</td>
-                <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
-                <td class="table_item table_item--width4">Боинг 737-800</td>
-                <td class="table_item table_item--width5">Якутск</td>
-                <td class="table_item table_item--width6">08.08 в 18:10</td>
-                <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
-                <td class="table_item table_item--width8">Gate 16</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+    <div class="wrap">
+        <div class="title">Онлайн табло</div>
+            <input type="checkbox" id="departure" class="info_form" checked>
+            <label for="departure">Вылет</label>
+            <input type="checkbox" id="arrival" checked>
+            <label for="arrival" class="info_form">Прибытие</label>
+        <div class="info">
+            <table class="info_table">
+                <thead class="table_head">
+                    <tr>
+                        <th class="table_item_header table_item--width1">Тип<br> рейса</th>
+                        <th class="table_item_header table_item--width2">Номер <br> рейса</th>
+                        <th class="table_item_header table_item--width3">Авиакомпания</th>
+                        <th class="table_item_header table_item--width4">Тип <br>воздушного<br> судна</th>
+                        <th class="table_item_header table_item--width5">Аэропорт<br> назначения</th>
+                        <th class="table_item_header table_item--width6">Плановое<br> время<br> вылета</th>
+                        <th class="table_item_header table_item--width7">Статус<br> рейса</th>
+                        <th class="table_item_header table_item--width8">Примечание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table_item_row departure">
+                        <td class="table_item table_item--width1">
+                            <span class="img_departure"></span>
+
+                        </td>
+                        <td class="table_item table_item--width2">UT 9002</td>
+                        <td class="table_item table_item--width3 icon_turkish"><span class="name_company">UTair Aviation</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Antalya</td>
+                        <td class="table_item table_item--width6"> 08.08 в 18:00</td>
+                        <td class="table_item table_item--width7">Landed 18:19. Baggage conveyor В01</td>
+                        <td class="table_item table_item--width8"></td>
+                    </tr>
+                    <tr class="table_item_row arrival">
+                        <td class="table_item table_item--width1">
+                            <span class="img_arrival"></span>
+                        </td>
+                        <td class="table_item table_item--width2">LH 1471</td>
+                        <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
+                        <td class="table_item table_item--width4">Аэробус А 320</td>
+                        <td class="table_item table_item--width5">Frankfurt</td>
+                        <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
+                        <td class="table_item table_item--width7">Boarding finished at gate 29</td>
+                        <td class="table_item table_item--width8"></td>
+                    </tr>
+                    <tr class="table_item_row arrival">
+                        <td class="table_item table_item--width1">
+                            <span class="img_arrival"></span>
+                        </td>
+                        <td class="table_item table_item--width2">ЯК 474</td>
+                        <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Якутск</td>
+                        <td class="table_item table_item--width6">08.08 в 18:10</td>
+                        <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
+                        <td class="table_item table_item--width8">Gate 16</td>
+                    </tr>
+                    <tr class="table_item_row arrival">
+                        <td class="table_item table_item--width1">
+                            <span class="img_arrival"></span>
+                        </td>
+                        <td class="table_item table_item--width2">LH 1471</td>
+                        <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
+                        <td class="table_item table_item--width4">Аэробус А 320</td>
+                        <td class="table_item table_item--width5">Frankfurt</td>
+                        <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
+                        <td class="table_item table_item--width7">Boarding finished at gate 29</td>
+                        <td class="table_item table_item--width8"></td>
+                    </tr>
+                    <tr class="table_item_row departure">
+                        <td class="table_item table_item--width1">
+                            <span class="img_departure"></span>
+                        </td>
+                        <td class="table_item table_item--width2">ЯК 474</td>
+                        <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Якутск</td>
+                        <td class="table_item table_item--width6">08.08 в 18:10</td>
+                        <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
+                        <td class="table_item table_item--width8">Gate 16</td>
+                    </tr>
+                    <tr class="table_item_row departure">
+                        <td class="table_item table_item--width1">
+                            <span class="img_departure"></span>
+                        </td>
+                        <td class="table_item table_item--width2">UT 9002</td>
+                        <td class="table_item table_item--width3 icon_turkish"><span class="name_company">UTair Aviation</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Antalya</td>
+                        <td class="table_item table_item--width6"> 08.08 в 18:00</td>
+                        <td class="table_item table_item--width7">Landed 18:19. Baggage conveyor В01</td>
+                        <td class="table_item table_item--width8"></td>
+                    </tr>
+                    <tr class="table_item_row departure">
+                        <td class="table_item table_item--width1">
+                            <span class="img_departure"></span>
+                        </td>
+                        <td class="table_item table_item--width2">LH 1471</td>
+                        <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
+                        <td class="table_item table_item--width4">Аэробус А 320</td>
+                        <td class="table_item table_item--width5">Frankfurt</td>
+                        <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
+                        <td class="table_item table_item--width7">Boarding finished at gate 29</td>
+                        <td class="table_item table_item--width8"></td>
+                    </tr>
+                    <tr class="table_item_row departure">
+                        <td class="table_item table_item--width1">
+                            <span class="img_departure"></span>
+                        </td>
+                        <td class="table_item table_item--width2">ЯК 474</td>
+                        <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Якутск</td>
+                        <td class="table_item table_item--width6">08.08 в 18:10</td>
+                        <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
+                        <td class="table_item table_item--width8">Gate 16</td>
+                    </tr>
+                    <tr class="table_item_row departure">
+                        <td class="table_item table_item--width1">
+                            <span class="img_departure"></span>
+                        </td>
+                        <td class="table_item table_item--width2">ЯК 474</td>
+                        <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Якутск</td>
+                        <td class="table_item table_item--width6">08.08 в 18:10</td>
+                        <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
+                        <td class="table_item table_item--width8">Gate 16</td>
+                    </tr>
+                    <tr class="table_item_row departure">
+                        <td class="table_item table_item--width1">
+                            <span class="img_departure"></span>
+                        </td>
+                        <td class="table_item table_item--width2">ЯК 474</td>
+                        <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Якутск</td>
+                        <td class="table_item table_item--width6">08.08 в 18:10</td>
+                        <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
+                        <td class="table_item table_item--width8">Gate 16</td>
+                    </tr>
+                    <tr class="table_item_row arrival">
+                        <td class="table_item table_item--width1">
+                            <span class="img_arrival"></span>
+                        </td>
+                        <td class="table_item table_item--width2">UT 9002</td>
+                        <td class="table_item table_item--width3 icon_turkish"><span class="name_company">UTair Aviation</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Antalya</td>
+                        <td class="table_item table_item--width6"> 08.08 в 18:00</td>
+                        <td class="table_item table_item--width7">Landed 18:19. Baggage conveyor В01</td>
+                        <td class="table_item table_item--width8"></td>
+                    </tr>
+                    <tr class="table_item_row departure">
+                        <td class="table_item table_item--width1">
+                            <span class="img_departure"></span>
+                        </td>
+                        <td class="table_item table_item--width2">LH 1471</td>
+                        <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
+                        <td class="table_item table_item--width4">Аэробус А 320</td>
+                        <td class="table_item table_item--width5">Frankfurt</td>
+                        <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
+                        <td class="table_item table_item--width7">Boarding finished at gate 29</td>
+                        <td class="table_item table_item--width8"></td>
+                    </tr>
+                    <tr class="table_item_row arrival">
+                        <td class="table_item table_item--width1">
+                            <span class="img_arrival"></span>
+                        </td>
+                        <td class="table_item table_item--width2">ЯК 474</td>
+                        <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Якутск</td>
+                        <td class="table_item table_item--width6">08.08 в 18:10</td>
+                        <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
+                        <td class="table_item table_item--width8">Gate 16</td>
+                    </tr>
+                    <tr class="table_item_row arrival">
+                        <td class="table_item table_item--width1">
+                            <span class="img_arrival"></span>
+                        </td>
+                        <td class="table_item table_item--width2">UT 9002</td>
+                        <td class="table_item table_item--width3 icon_turkish"><span class="name_company">UTair Aviation</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Antalya</td>
+                        <td class="table_item table_item--width6"> 08.08 в 18:00</td>
+                        <td class="table_item table_item--width7">Landed 18:19. Baggage conveyor В01</td>
+                        <td class="table_item table_item--width8"></td>
+                    </tr>
+                    <tr class="table_item_row arrival">
+                        <td class="table_item table_item--width1">
+                            <span class="img_arrival"></span>
+                        </td>
+                        <td class="table_item table_item--width2">LH 1471</td>
+                        <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
+                        <td class="table_item table_item--width4">Аэробус А 320</td>
+                        <td class="table_item table_item--width5">Frankfurt</td>
+                        <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
+                        <td class="table_item table_item--width7">Boarding finished at gate 29</td>
+                        <td class="table_item table_item--width8"></td>
+                    </tr>
+                    <tr class="table_item_row arrival">
+                        <td class="table_item table_item--width1">
+                            <span class="img_arrival"></span>
+                        </td>
+                        <td class="table_item table_item--width2">ЯК 474</td>
+                        <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Якутск</td>
+                        <td class="table_item table_item--width6">08.08 в 18:10</td>
+                        <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
+                        <td class="table_item table_item--width8">Gate 16</td>
+                    </tr>
+                    <tr class="table_item_row arrival">
+                        <td class="table_item table_item--width1">
+                            <span class="img_arrival"></span>
+                        </td>
+                        <td class="table_item table_item--width2">UT 9002</td>
+                        <td class="table_item table_item--width3 icon_turkish"><span class="name_company">UTair Aviation</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Antalya</td>
+                        <td class="table_item table_item--width6"> 08.08 в 18:00</td>
+                        <td class="table_item table_item--width7">Landed 18:19. Baggage conveyor В01</td>
+                        <td class="table_item table_item--width8"></td>
+                    </tr>
+                    <tr class="table_item_row arrival ">
+                        <td class="table_item table_item--width1">
+                            <span class="img_arrival"></span>
+
+                        </td>
+                        <td class="table_item table_item--width2"><a class="lufthansa" href="#">LH 1471</a>
+                            <div class="info_lufthansa">
+                                <p>Тип воздушного судна: LH 1471</p>
+
+                                <p>Аэропорт назначения: Франкфурт</p>
+
+                                <p>Статус рейса: Посадка завершена, терминал 29</p>
+
+                                <p>Примечания:</p>
+                            </div>
+                        </td>
+                        <td class="table_item table_item--width3 icon_lufthansa"><span class="name_company">Lufthansa</span></td>
+                        <td class="table_item table_item--width4">Аэробус А 320</td>
+                        <td class="table_item table_item--width5">Frankfurt</td>
+                        <td class="table_item table_item--width6">08.08 14:59 - 08.08 14:59 (actual)</td>
+                        <td class="table_item table_item--width7">Boarding finished at gate 29</td>
+                        <td class="table_item table_item--width8"></td>
+                    </tr>
+                    <tr class="table_item_row arrival">
+                        <td class="table_item table_item--width1">
+                            <span class="img_arrival"></span>
+                        </td>
+                        <td class="table_item table_item--width2">ЯК 474</td>
+                        <td class="table_item table_item--width3 icon_yakutia"><span class="name_company">Yakutia</span></td>
+                        <td class="table_item table_item--width4">Боинг 737-800</td>
+                        <td class="table_item table_item--width5">Якутск</td>
+                        <td class="table_item table_item--width6">08.08 в 18:10</td>
+                        <td class="table_item table_item--width7">Москва (Внуково) 17:55.</td>
+                        <td class="table_item table_item--width8">Gate 16</td>
+                    </tr>
+                </tbody>
+                    </table>
+            <div class="il">
+                <p>Тип воздушного судна: LH 1471</p>
+
+                <p>Аэропорт назначения: Франкфурт</p>
+
+                <p>Статус рейса: Посадка завершена, терминал 29</p>
+
+                <p>Примечания:</p>
+            </div>
+        </div>
     </div>
 
-<script>
-    (function () {
-        var thead = document.querySelector(".table_head");
-        document.addEventListener("scroll", function () {
-            if (document.body.scrollTop >= 130) {
-                thead.classList.add('scroll_header');
-            } else {
-                thead.classList.remove('scroll_header');
-            }
-        })
-    })();
-</script>
+
+    <script>
+        (function () {
+            var thead = document.querySelector(".table_head");
+            document.addEventListener("scroll", function () {
+                if (document.body.scrollTop >= 130) {
+                    thead.classList.add('scroll_header');
+                } else {
+                    thead.classList.remove('scroll_header');
+                }
+            })
+        })();
+
+    </script>
 </body>
 </html>
