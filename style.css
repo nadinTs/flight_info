@@ -9,14 +9,22 @@ table,
 tbody,
 thead{
     width: 900px;
-    z-index: 10;
+    z-index: 50;
 }
 tr {
     display: table-row;
 }
 td,th {
     display: table-cell;
+    position: relative;
+    outline: 0;
 }
+a {
+    text-decoration: none;
+    color: #222222;
+    cursor: default;
+}
+
 
 .table_item--width1 {
     width: 60px;
@@ -94,16 +102,18 @@ tr,
 body tbody tr:hover {
     background-color: #e8fdf7;
 
-}
-td, th {
-    position: relative;
-    outline: 0;
+
 }
 
 .table_item:hover,
 .table_item_row:hover:nth-child(odd) td{
     background-color: #e8fdf7;
+    border: 1px solid #e8fdf7;
 
+}
+.info table tr:hover td,
+.info table tr:hover:nth-child(odd) td {
+    border: 1px solid #e8fdf7;
 }
 
 .table_item_row td:hover,
@@ -202,28 +212,20 @@ thead th:not(:empty):focus::after
 .name_company {
     display: none;
 }
-.lufthansa {
-    position: relative;
+
+
+.wrap_info_window {
+   display: none;
 }
 
-.info_lufthansa {
+.info_popup {
     display: none;
-    position: absolute;
-    top: 20px;
-    width: 100px;
-    height: 100px;
-    left: 0;
-    font-size: 10px;
-    z-index: 120;
-}
-
-tbody .lufthansa:hover+.info_lufthansa {
-    display: block;
-    border: 1px solid red;
 }
 
 
-@media (min-width: 800px) and (max-width: 900px) {
+
+
+@media (min-width: 820px) and (max-width: 900px) {
 
     .wrap{
         width: 790px;
@@ -241,8 +243,54 @@ tbody .lufthansa:hover+.info_lufthansa {
     }
 
 
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .wrap_info_window {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        background-color:  rgba(0,0,0,0.5);
+        z-index: 110;
+        cursor: default;
+    }
+
+    .info_popup {
+        top: -100%;
+        right: 0;
+        left: 50%;
+        width: 55%;
+        max-width: 450px;
+        min-width: 250px;
+        position: fixed;
+        font-size: 1em;
+        display: block;
+        margin: 0;
+        z-index: 120;
+        padding: 15px;
+        background-color: lightgrey;
+    }
+
+    .wrap_info_window:target {
+        display: block;
+    }
+    .wrap_info_window:target+.info_popup {
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        top: 20%;
+    }
+
+
+
 }
-@media (min-width: 700px) and (max-width: 799px) {
+@media (min-width: 700px) and (max-width: 819px) {
 
     .wrap {
         width: 665px;
@@ -258,6 +306,51 @@ tbody .lufthansa:hover+.info_lufthansa {
     .table_item--width8 {
         display: none;
     }
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .wrap_info_window {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        background-color:  rgba(0,0,0,0.5);
+        z-index: 110;
+        cursor: default;
+    }
+
+    .info_popup {
+        top: -100%;
+        right: 0;
+        left: 50%;
+        width: 55%;
+        max-width: 450px;
+        min-width: 250px;
+        position: fixed;
+        font-size: 1em;
+        display: block;
+        margin: 0;
+        z-index: 120;
+        padding: 15px;
+        background-color: lightgrey;
+    }
+
+    .wrap_info_window:target {
+        display: block;
+    }
+    .wrap_info_window:target+.info_popup {
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        top: 20%;
+    }
+
+
 
 }
 @media (min-width: 600px) and (max-width: 699px) {
@@ -278,9 +371,55 @@ tbody .lufthansa:hover+.info_lufthansa {
         display: none;
     }
 
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .wrap_info_window {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        background-color:  rgba(0,0,0,0.5);
+        z-index: 110;
+        cursor: default;
+    }
+
+    .info_popup {
+        top: -100%;
+        right: 0;
+        left: 50%;
+        width: 55%;
+        max-width: 450px;
+        min-width: 250px;
+        position: fixed;
+        font-size: 1em;
+        display: block;
+        margin: 0;
+        z-index: 120;
+        padding: 15px;
+        background-color: lightgrey;
+    }
+
+    .wrap_info_window:target {
+        display: block;
+    }
+    .wrap_info_window:target+.info_popup {
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        top: 20%;
+    }
+
+
+
 }
 
-@media (min-width: 400px) and (max-width: 599px) {
+@media (min-width: 430px) and (max-width: 599px) {
 
     .wrap {
         width: 415px;
@@ -298,9 +437,55 @@ tbody .lufthansa:hover+.info_lufthansa {
     .table_item--width8 {
         display: none;
     }
+
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .wrap_info_window {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        background-color:  rgba(0,0,0,0.5);
+        z-index: 110;
+        cursor: default;
+    }
+
+    .info_popup {
+        top: -100%;
+        right: 0;
+        left: 50%;
+        width: 55%;
+        max-width: 450px;
+        min-width: 250px;
+        position: fixed;
+        font-size: 1em;
+        display: block;
+        margin: 0;
+        z-index: 120;
+        padding: 15px;
+        background-color: lightgrey;
+    }
+
+    .wrap_info_window:target {
+        display: block;
+    }
+    .wrap_info_window:target+.info_popup {
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        top: 20%;
+    }
+
+
 }
 
-@media (max-width: 399px) {
+@media (max-width: 439px) {
 
     .wrap {
         width: 320px;
@@ -322,5 +507,51 @@ tbody .lufthansa:hover+.info_lufthansa {
     .table_item--width8 {
         display: none;
     }
+
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .wrap_info_window {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        background-color:  rgba(0,0,0,0.5);
+        z-index: 110;
+        cursor: default;
+    }
+
+    .info_popup {
+        top: -100%;
+        right: 0;
+        left: 50%;
+        width: 55%;
+        max-width: 450px;
+        min-width: 250px;
+        position: fixed;
+        font-size: 1em;
+        display: block;
+        margin: 0;
+        z-index: 120;
+        padding: 15px;
+        background-color: lightgrey;
+    }
+
+    .wrap_info_window:target {
+        display: block;
+    }
+    .wrap_info_window:target+.info_popup {
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        top: 20%;
+    }
+
+
 
 }
