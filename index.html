@@ -300,9 +300,11 @@
         (function () {
             var thead = document.querySelector(".table_head");
             document.addEventListener("scroll", function () {
-                if (document.body.scrollTop >= 130) {
+                if ((document.documentElement.scrollTop || document.body.scrollTop) >= 130) {
                     thead.classList.add('scroll_header');
-                } else {
+                }
+
+                else {
                     thead.classList.remove('scroll_header');
                 }
             })
